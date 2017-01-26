@@ -3,8 +3,6 @@ package test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.lang.reflect.InvocationTargetException;
-
 import org.junit.Test;
 
 import beverage.*;
@@ -12,19 +10,15 @@ import decorator.*;
 
 public class BeverageOrderTest {
 	
-	/*  House Blend     -   0.89
-		Dark Roast	    -	0.99
-		Decaf		    -	1.05
-		Espresso      	-	1.99
-		
-		Steamed Milk    -   .1
-		Mocha   		-	.2
-		Soy		     	-   .15
-		Whip			-   .1
+	/*|       BEVERAGES                 |             CONDIMENTS	   | 
+	    House Blend     -   0.89		| 		Steamed Milk    -   .1
+		Dark Roast	    -	0.99		|		Mocha   		-	.2
+		Decaf		    -	1.05		|		Soy		     	-   .15
+		Espresso      	-	1.99		|		Whip			-   .1		
 	 */
 
 	@Test
-	public void BeverageWithoutCondimentsTest() throws InstantiationException, IllegalAccessException, InvocationTargetException, NoSuchMethodException, SecurityException {
+	public void BeverageWithoutCondimentsTest() {
 		Beverage espresso = new Espresso();
 		assertEquals("Espresso", espresso.getDescription());		
 		assertTrue(espresso.cost() - 1.99 == 0);		
@@ -48,8 +42,16 @@ public class BeverageOrderTest {
 		assertEquals(decaf.cost(), 1.50, 0);
 	}
 	
-	
-
-	
-
+	@Test
+	public void BeverageWithRepeatedCondimentsTest(){
+		Beverage houseBlend = new HouseBlend();
+		houseBlend = new Whip(houseBlend);
+		houseBlend = new Mocha(houseBlend);
+		houseBlend = new Mocha(houseBlend);
+		houseBlend = new Soy(houseBlend);
+		houseBlend = new Whip(houseBlend);
+		
+		assertEquals("House Blend Coffee, Whip, Mocha, Mocha, Soy, Whip", houseBlend.getDescription());		
+		assertEquals(houseBlend.cost(), 1.64, 0);
+	}
 }
