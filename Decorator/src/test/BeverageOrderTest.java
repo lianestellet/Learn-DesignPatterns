@@ -10,11 +10,11 @@ import decorator.*;
 
 public class BeverageOrderTest {
 	
-	/*|       BEVERAGES                 |             CONDIMENTS	   | 
-	    House Blend     -   0.89		| 		Steamed Milk    -   .1
-		Dark Roast	    -	0.99		|		Mocha   		-	.2
-		Decaf		    -	1.05		|		Soy		     	-   .15
-		Espresso      	-	1.99		|		Whip			-   .1		
+	/*|       BEVERAGES       T  |  G  |  V  |        CONDIMENTS	     T  |  G |  V |
+	    House Blend     -   0.89 |0.99 |1.15 |		Steamed Milk    -   .15 |.15 |.15 |
+		Dark Roast	    -	0.99 |1.09 |1.19 |		Mocha   		-	.20 |.30 |.40 |
+		Decaf		    -	1.05 |1.25 |1.45 |		Soy		     	-   .10 |.15 |.20 |
+		Espresso      	-	1.99 |2.29 |2.49 |		Whip			-   .11	|.12 |.13 |
 	 */
 
 	@Test
@@ -29,7 +29,7 @@ public class BeverageOrderTest {
 		Beverage darkRoast = new DarkRoast();
 		darkRoast = new SteamedMilk(darkRoast);
 		assertEquals("Dark Roast, Steamed Milk", darkRoast.getDescription());		
-		assertEquals(darkRoast.cost(), 1.09, 0);
+		assertEquals(1.14, darkRoast.cost(), 0);
 	}
 	
 	@Test
@@ -52,6 +52,6 @@ public class BeverageOrderTest {
 		houseBlend = new Whip(houseBlend);
 		
 		assertEquals("House Blend Coffee, Whip, Mocha, Mocha, Soy, Whip", houseBlend.getDescription());		
-		assertEquals(houseBlend.cost(), 1.64, 0);
+		assertEquals(1.61, houseBlend.cost(), 0);
 	}
 }
