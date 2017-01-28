@@ -1,12 +1,13 @@
 package stores;
 
-import pizza.NYStyleCheesePizza;
-import pizza.NYStyleClamPizza;
-import pizza.NYStylePepperoniPizza;
-import pizza.NYStyleVeggiePizza;
-import pizza.Pizza;
+import model.Pizza;
+import model.PizzaStore;
+import newYorkPizzaStyle.NYStyleCheesePizza;
+import newYorkPizzaStyle.NYStyleClamPizza;
+import newYorkPizzaStyle.NYStylePepperoniPizza;
+import newYorkPizzaStyle.NYStyleVeggiePizza;
 
-public class NyPizzaStore extends PizzaStore {
+public class NYPizzaStore extends PizzaStore {
 
 	@Override
 	protected Pizza createPizza(String item) {
