@@ -23,9 +23,12 @@ public class SteamedMilk extends CondimentDecorator {
 	@Override
 	public double cost() {
 		double cost = beverage.cost();
-		if (beverage.getSize() == Size.TALL) {	 				cost += .15;} 
-		else if (beverage.getSize() == Size.GRANDE) {			cost += .15;} 
-		else if (beverage.getSize() == Size.VENTI) {			cost += .15;}
+		
+		switch (beverage.getSize()) {
+		case TALL:			cost += .15;			break;
+		case GRANDE:		cost += .15;			break;
+		case VENTI:			cost += .15;			break;
+		}
 		return cost;
 	}
 

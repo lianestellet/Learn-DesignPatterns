@@ -14,12 +14,11 @@ public class DarkRoast extends Beverage {
 
 	public double cost() {
 		double cost = 0;
-		if (super.getSize() == Size.TALL) {
-			cost += .99;
-		} else if (super.getSize() == Size.GRANDE) {
-			cost += 1.09;
-		} else if (super.getSize() == Size.VENTI) {
-			cost += 1.19;
+		
+		switch (super.getSize()) {
+		case TALL:			cost += 0.99;			break;
+		case GRANDE:		cost += 1.09;			break;
+		case VENTI:			cost += 1.19;			break;
 		}
 		return cost;
 	}

@@ -14,13 +14,13 @@ public class HouseBlend extends Beverage {
 
 	public double cost() {
 		double cost = 0;
-		if (super.getSize() == Size.TALL) {
-			cost += .89;
-		} else if (super.getSize() == Size.GRANDE) {
-			cost += .99;
-		} else if (super.getSize() == Size.VENTI) {
-			cost += 1.15;
+		
+		switch (super.getSize()) {
+		case TALL:			cost += 0.89;			break;
+		case GRANDE:		cost += 0.99;			break;
+		case VENTI:			cost += 1.15;			break;
 		}
+		
 		return cost;
 	}
 

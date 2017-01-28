@@ -14,12 +14,11 @@ public class Espresso extends Beverage {
 
 	public double cost() {
 		double cost = 0;
-		if (super.getSize() == Size.TALL) {
-			cost += 1.99;
-		} else if (super.getSize() == Size.GRANDE) {
-			cost += 2.29;
-		} else if (super.getSize() == Size.VENTI) {
-			cost += 2.49;
+		
+		switch (super.getSize()) {
+		case TALL:			cost += 1.99;			break;
+		case GRANDE:		cost += 2.29;			break;
+		case VENTI:			cost += 2.49;			break;
 		}
 		return cost;
 	}
