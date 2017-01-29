@@ -1,6 +1,4 @@
-package stores;
-
-import pizza.Pizza;
+package model;
 
 public abstract class PizzaStore {
 

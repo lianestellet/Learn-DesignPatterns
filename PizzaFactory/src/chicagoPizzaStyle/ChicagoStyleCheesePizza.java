@@ -1,4 +1,6 @@
-package pizza;
+package chicagoPizzaStyle;
+
+import model.Pizza;
 
 public class ChicagoStyleCheesePizza extends Pizza {
 	public ChicagoStyleCheesePizza() {
