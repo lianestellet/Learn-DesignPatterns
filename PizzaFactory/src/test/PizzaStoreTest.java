@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import model.PizzaStore;
-import stores.NYPizzaStore;
+import interfaces.PizzaStore;
+import model.NYPizzaStore;
 
 public class PizzaStoreTest {
 

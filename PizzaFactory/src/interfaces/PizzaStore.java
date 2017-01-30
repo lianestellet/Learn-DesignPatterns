@@ -1,4 +1,4 @@
-package model;
+package interfaces;
 
 public abstract class PizzaStore {
 
