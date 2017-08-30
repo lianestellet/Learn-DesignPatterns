@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebb4a630-b5a2-4027-a371-3a4e134c6142" name="Default" comment="" />
+    <list default="true" id="ebb4a630-b5a2-4027-a371-3a4e134c6142" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WeatherORama/models/WeatherData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,14 +22,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DuckTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/tests/DuckTest.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="548">
+              <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeatherData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WeatherORama/models/WeatherData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1334">
+              <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#MallardDuckFlyTest#0;class#DuckTest#0" expanded="false" />
+                <marker date="1504100437552" expanded="true" signature="43870:43912" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="43870:43930" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="43870:43943" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="43870:43958" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="43993:46218" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44006:46203" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44060:44355" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44079:44340" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44142:44320" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44182:44286" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44203:44264" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44405:44732" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44424:44717" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44519:44697" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44559:44663" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44580:44641" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44783:45048" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44802:45033" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44835:45013" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44875:44979" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="44896:44957" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45091:45397" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45110:45382" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45184:45362" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45224:45328" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45245:45306" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45448:45804" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45467:45789" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45552:45769" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45592:45735" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45613:45713" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45856:46189" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45875:46174" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="45976:46154" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="46016:46120" ph="..." />
+                <marker date="1504100437552" expanded="true" signature="46037:46098" ph="..." />
               </folding>
             </state>
           </provider>
@@ -75,9 +132,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>git</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,14 +190,15 @@
         <option value="$PROJECT_DIR$/src/ducks/duck/ModelDuck.java" />
         <option value="$PROJECT_DIR$/src/ducks/duck/RubberDuck.java" />
         <option value="$PROJECT_DIR$/src/test/java/DuckTest.java" />
+        <option value="$PROJECT_DIR$/src/WeatherORama/models/WeatherData.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-21" />
-    <option name="y" value="12" />
-    <option name="width" value="2420" />
-    <option name="height" value="1154" />
+    <option name="x" value="258" />
+    <option name="y" value="-9" />
+    <option name="width" value="2153" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -165,7 +229,25 @@
             <path>
               <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="WeatherORama" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="WeatherORama" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -388,14 +470,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5084388" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46013668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28181818" sideWeight="0.51282054" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19703873" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21750806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.49156117" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28181818" sideWeight="0.4871795" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -421,14 +503,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ducks/interfaces/FlyBehaviour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -507,8 +581,8 @@
         <state relative-caret-position="63">
           <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="false" />
+            <element signature="e#317#318#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -540,8 +614,8 @@
         <state relative-caret-position="63">
           <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -574,6 +648,75 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MallardDuckFlyTest#0;class#DuckTest#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeatherORama/models/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+          <folding>
+            <marker date="1504100437552" expanded="true" signature="43870:43912" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="43870:43930" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="43870:43943" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="43870:43958" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="43993:46218" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44006:46203" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44060:44355" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44079:44340" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44142:44320" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44182:44286" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44203:44264" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44405:44732" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44424:44717" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44519:44697" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44559:44663" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44580:44641" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44783:45048" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44802:45033" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44835:45013" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44875:44979" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="44896:44957" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45091:45397" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45110:45382" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45184:45362" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45224:45328" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45245:45306" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45448:45804" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45467:45789" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45552:45769" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45592:45735" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45613:45713" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45856:46189" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45875:46174" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="45976:46154" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="46016:46120" ph="..." />
+            <marker date="1504100437552" expanded="true" signature="46037:46098" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeatherORama/models/WeatherData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
