@@ -15,7 +15,7 @@ Jetbrains created a nice IDE for developing Java (IntelliJ), that really help us
 
 This mini project show us a lot about Design Principles, through an application that simulate ducks creations it shows us how ducks can have different behaviours and that we need to have a flexible code to lose less time with maintenance. This can be achieved implementing to interfaces, using composition and identifying the parts of code that may vary.
 
-```javascript
+```html
 The Strategy Pattern defines a family of algorithms,
 encapsulates each one, and makes them interchangeable.
 Strategy lets the algorithm vary independently from
