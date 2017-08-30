@@ -1,5 +1,5 @@
 # DesignPatternsStudy
-Studying through the book Head First Design Patterns to expand OO and software architecture knowledge. Also I am adapting the code to cover all core methods with tests using JUnit. 
+Studying through the book Head First Design Patterns to expand OO and software architecture knowledge. Also I am adapting the code to cover all core methods with tests using JUnit and making some annotations to readapt faster when it comes the time to user any pattern. 
 
 ## Config
 
@@ -13,12 +13,22 @@ Jetbrains created a nice IDE for developing Java (IntelliJ), that really help us
 
 ## 1. Ducks (Strategy Pattern)
 
-This mini project show us a lot about Design Principles, through an application that simulate ducks creations it shows us how ducks can have different behaviours and that we need to have a flexible code to lose less time with maintenance. This can be achieved implementing to interfaces, using composition and identifying the parts of code that may vary.
-
 ```html
 The Strategy Pattern defines a family of algorithms,
 encapsulates each one, and makes them interchangeable.
 Strategy lets the algorithm vary independently from
 clients that use it.
+```
+
+This mini project show us a lot about Design Principles, through an application that simulate ducks creations it shows us how ducks can have different behaviours and that we need to have a flexible code to lose less time with maintenance. This can be achieved implementing to interfaces, using composition and identifying the parts of code that may vary.
+
+
+## 2. Weather o Rama (Observer Pattern)
+
+```html
+The Observer Pattern defines a one-to-many
+dependency between objects so that when one
+object changes state, all of its dependents are
+notified and updated automatically.
 ```
 
