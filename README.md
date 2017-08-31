@@ -31,4 +31,4 @@ dependency between objects so that when one
 object changes state, all of its dependents are
 notified and updated automatically.
 ```
-
+The Weather app consists on notify displays about changes in measurements (temperature, humidity, pressure) so they can change the data to be displayed. The Observable implements an interface and save observers on it instance so it can call the update method whenever there is change on data.
