@@ -1,33 +1,47 @@
 package ducks.tests;
 
 import ducks.behaviours.FlyWithRocket;
+import ducks.behaviours.QuackSqueak;
 import ducks.duck.*;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
-import ducks.duck.MallardDuck;
-import ducks.duck.MiniDuck;
-import ducks.duck.ModelDuck;
-import ducks.duck.RubberDuck;
 
 public class DuckTest {
 
+    private ModelDuck model ;
+    private RubberDuck rubber ;
+    private MallardDuck mallard ;
+    private MiniDuck mini ;
+
+    @Before
+    public void setup(){
+        model = new ModelDuck();
+        rubber = new RubberDuck();
+        mallard = new MallardDuck();
+        mini = new MiniDuck();
+    }
+
     @Test
-    public void MallardDuckFlyTest(){
-        MallardDuck mallard = new MallardDuck();
+    public void AllDucksDisplaysTest(){
         Assert.assertEquals("I am a Mallard Duck!", mallard.display());
+        Assert.assertEquals("I am a Mini Duck!", mini.display());
+        Assert.assertEquals("I am a Model Duck!", model.display());
+        Assert.assertEquals("I am a Rubber Duck!", rubber.display());
+    }
+
+    @Test
+    public void MallardDuckFlyBehaviourTest(){
         Assert.assertEquals("I'm flying!!", mallard.performFly());
     }
 
     @Test
-    public void MallardDuckQuackTest(){
-        MallardDuck mallard = new MallardDuck();
-        Assert.assertEquals("I am a Mallard Duck!", mallard.display());
+    public void MallardDuckQuackBehaviourTest(){
         Assert.assertEquals("Quack!", mallard.performQuack());
     }
 
     @Test
     public void MiniDuckTest(){
-        MiniDuck mini = new MiniDuck();
         Assert.assertEquals("I am a Mini Duck!", mini.display());
         Assert.assertEquals("Quack!", mini.performQuack());
         Assert.assertEquals("I can't fly!", mini.performFly());
@@ -35,22 +49,23 @@ public class DuckTest {
 
     @Test
     public void ModelDuckTest(){
-        ModelDuck model = new ModelDuck();
         Assert.assertEquals("I am a Model Duck!", model.display());
         Assert.assertEquals("(Silence)", model.performQuack());
         Assert.assertEquals("I can't fly!", model.performFly());
     }
 
     @Test
-    public void RubberDuckWithRocketsTest(){
-        RubberDuck rubber = new RubberDuck();
-        Assert.assertEquals("I am a Rubber Duck!", rubber.display());
+    public void RubberDuckChangeFlyBehaviourNoFlyToFlyWithRocketsTest(){
         Assert.assertEquals("I can't fly!", rubber.performFly());
-
         rubber.setFlyBehaviour(new FlyWithRocket());
         Assert.assertEquals("Flying with rockets!", rubber.performFly());
     }
 
-
+    @Test
+    public void ModelDuckChangeQuackBehaviourSilenceToSqueakTest(){
+        Assert.assertEquals("(Silence)", model.performQuack());
+        model.setQuackBehaviour(new QuackSqueak());
+        Assert.assertEquals("Squeak!", model.performQuack());
+    }
 
 }
