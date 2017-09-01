@@ -1,5 +1,5 @@
 # Design Patterns Using Java
-Studying through the book **Head First Design Patterns - O'Reilly** to expand OO and software architecture knowledge. Also I am adapting the code to cover all core methods with tests using JUnit and making some annotations to readapt faster when it comes the time to user any pattern. 
+Studying through the book **Head First Design Patterns - O'Reilly** to expand OO and software architecture knowledge. Also I am adapting the code to cover all core methods with tests using JUnit and making some annotations to readapt faster when it comes the time to reuse any of these pattern. 
 
 ## Config
 
