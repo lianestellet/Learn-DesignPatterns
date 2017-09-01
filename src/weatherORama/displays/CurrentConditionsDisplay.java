@@ -1,8 +1,8 @@
-package WeatherORama.displays;
+package weatherORama.displays;
 
-import WeatherORama.interfaces.DisplayElement;
-import WeatherORama.interfaces.Observer;
-import WeatherORama.interfaces.Subject;
+import weatherORama.interfaces.DisplayElement;
+import weatherORama.interfaces.Observer;
+import weatherORama.interfaces.Subject;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;

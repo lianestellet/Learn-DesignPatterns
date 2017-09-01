@@ -1,4 +1,4 @@
-package WeatherORama.swing;
+package weatherORama.swing;
 
 import java.awt.*;
 import javax.swing.*;

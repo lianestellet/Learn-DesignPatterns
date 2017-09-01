@@ -1,4 +1,4 @@
-package WeatherORama.interfaces;
+package weatherORama.interfaces;
 
 public interface DisplayElement {
 

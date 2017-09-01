@@ -1,7 +1,7 @@
-package WeatherORama.tests;
+package weatherORama.tests;
 
-import WeatherORama.displays.*;
-import WeatherORama.models.WeatherData;
+import weatherORama.displays.*;
+import weatherORama.models.WeatherData;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

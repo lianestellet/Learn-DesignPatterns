@@ -1,9 +1,9 @@
-package WeatherORama.displays;
+package weatherORama.displays;
 
 
-import WeatherORama.interfaces.DisplayElement;
-import WeatherORama.interfaces.Observer;
-import WeatherORama.models.WeatherData;
+import weatherORama.interfaces.DisplayElement;
+import weatherORama.interfaces.Observer;
+import weatherORama.models.WeatherData;
 
 public class StatisticsDisplay implements Observer, DisplayElement {
     private float maxTemp = 0.0f;

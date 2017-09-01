@@ -1,7 +1,7 @@
-package WeatherORama.models;
+package weatherORama.models;
 
-import WeatherORama.interfaces.Observer;
-import WeatherORama.interfaces.Subject;
+import weatherORama.interfaces.Observer;
+import weatherORama.interfaces.Subject;
 
 import java.util.ArrayList;
 

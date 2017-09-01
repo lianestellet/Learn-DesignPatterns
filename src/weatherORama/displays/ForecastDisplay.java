@@ -1,8 +1,8 @@
-package WeatherORama.displays;
+package weatherORama.displays;
 
-import WeatherORama.interfaces.DisplayElement;
-import WeatherORama.interfaces.Observer;
-import WeatherORama.models.WeatherData;
+import weatherORama.interfaces.DisplayElement;
+import weatherORama.interfaces.Observer;
+import weatherORama.models.WeatherData;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 	private float currentPressure = 29.92f;  
