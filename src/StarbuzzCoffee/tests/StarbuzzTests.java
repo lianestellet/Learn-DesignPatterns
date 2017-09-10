@@ -21,17 +21,10 @@ public class StarbuzzTests {
         houseBlend = new HouseBlend();
     }
 
-    /*
-     House Blend       0.89 | 1.09 | 1.20
-     Dark Roast          0.79 | 0.99 | 1.19
-     Decaf                  1.25 | 1.50 | 1.75
-     Espresso             1.99 | 2.09 | 2.20
-     Steamed Milk    0.10 | 0.15 | 0.20
-     Mocha               0.20 | 0.30 | 0.40
-     Soy                     0.15 | 0.25 | 0.30
-     Whip                  0.10 | 0.15 | 0.20
-     */
-
+    //                        |   House Blend   |   Dark Roast  |   Decaf   |    Espresso    |   Steamed Milk    |   Mocha   |     Soy     |     Whip    |
+    // TALL               |         0.89                    0.79              1.25             1.99                     0.10                   0.20           0.15            0.10
+    // GRANDE        |         1.09                    0.99              1.50              2.09                    0.15                   0.30           0.25            0.15
+    // VENTI             |         1.20                    1.99              1.75              2.20                    0.20                   0.40           0.30            0.20
 
 
     @Test
@@ -63,10 +56,10 @@ public class StarbuzzTests {
     @Test
     public void decafWithDecoratorsShouldIncreaseCostTest(){
         decaf = new Soy(decaf);
-        Assert.assertEquals(1.40, decaf.cost(), 0.001);
+        Assert.assertEquals(1.40, decaf.cost(), 0.01);
 
         decaf = new SteamedMilk(decaf);
-        Assert.assertEquals(1.5, decaf.cost(), 0.001);
+        Assert.assertEquals(1.50, decaf.cost(), 0.01);
     }
 
     @Test
@@ -76,9 +69,9 @@ public class StarbuzzTests {
         darkRoast.setSize(Beverage.Size.GRANDE);
         decaf.setSize(Beverage.Size.VENTI); ;
 
-        Assert.assertEquals(0.89, houseBlend.cost(), 0.001);
-        Assert.assertEquals(0.99, darkRoast.cost(), 0.001);
-        Assert.assertEquals(1.75, decaf.cost(), 0.001);
+        Assert.assertEquals(0.89, houseBlend.cost(), 0.01);
+        Assert.assertEquals(0.99, darkRoast.cost(), 0.01);
+        Assert.assertEquals(1.75, decaf.cost(), 0.01);
 
     }
 
@@ -89,14 +82,16 @@ public class StarbuzzTests {
         darkRoast.setSize(Beverage.Size.VENTI);
 
         espresso = new SteamedMilk(espresso);
-        Assert.assertEquals(2.24, espresso.cost(), 0.001);
+        Assert.assertEquals(2.24, espresso.cost(), 0.01);
         espresso = new Whip(espresso);
-        Assert.assertEquals(2.39, espresso.cost(), 0.001);
+        Assert.assertEquals(2.39, espresso.cost(), 0.01);
+        espresso = new Whip(espresso);
+        Assert.assertEquals(2.54, espresso.cost(), 0.01);
 
         darkRoast = new Mocha(darkRoast);
-        Assert.assertEquals(1.59, darkRoast.cost(), 0.001);
+        Assert.assertEquals(1.59, darkRoast.cost(), 0.01);
         darkRoast = new Soy(darkRoast);
-        Assert.assertEquals(1.89, darkRoast.cost(), 0.001);
+        Assert.assertEquals(1.89, darkRoast.cost(), 0.01);
 
 
     }
