@@ -55,3 +55,14 @@ to the subclasses.
 ```
 
 The PizzaStore focus on the pizzas creation process (create pizza by type, bake, cut, box). On the process, the store became a franchise and each pizza store have it own way of creating pizzas, so the same pizza type is different from both regions and that's how we choose the factory pattern. All pizza stores have common behavior, they make pizza! what changes are the way they do. So the strategy used by factory is to delegate the object creation to a subclass, so we decouple dependency from our concrete classes and can keep on. Lately, also the ingredients of the pizza started varying (sauce, cheese, veggies) so we separated the responsability for declaring which specific ingredient we are using to our superclass, no matter if is parmesan cheese or mozzarela, it just needs to know that is a cheese, and then the type of cheese creation is delegated to a subclass. I found it a really good pattern and they tie together nice OO concepts like _**Depend on abstractions, not on concrete classes and encapsulate what varies**_.
+
+
+## 6. Remote Control (Command Pattern)
+
+```html
+Command - Encapsulates a request as an object, thereby letting you
+parameterize clients with different requests, queue or log requests, 
+and support undoable operations.
+```
+
+The Remote Control project asks us to create an automation for household devices, so we could control lights, fans, hottubs and other things of our house with a remote control. This pattern fits very well in this situation, because we know that the user press a button that executes a command, and so we could create a common interface that all commands should implement to decouple the receiver from the invoker separating the logic from the object that is receiving an action. It's a good pattern for requests too, because we can save a set of requests that we could redo them in case of error in one of the steps.
