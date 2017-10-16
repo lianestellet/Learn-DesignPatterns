@@ -66,3 +66,23 @@ and support undoable operations.
 ```
 
 The Remote Control project asks us to create an automation for household devices, so we could control lights, fans, hottubs and other things of our house with a remote control. This pattern fits very well in this situation, because we know that the user press a button that executes a command, and so we could create a common interface that all commands should implement to decouple the receiver from the invoker separating the logic from the object that is receiving an action. It's a good pattern for requests too, because we can save a set of requests that we could redo them in case of error in one of the steps.
+
+## 7 DuckAdapter (Adapter Pattern)
+
+```html
+The Adapter Pattern converts the interface of a class
+into another interface the clients expect. Adapter lets
+classes work together that couldn’t otherwise because of
+incompatible interfaces.
+```
+
+It is a pretty simple one, it just changes your interface to what the client expects. In this case our client expects ducks but we have just turkeys, so it was created an adapter that receives an turkey and implements the duck interface, so the client see the adapter as a Duck and it will accept it. It's quite usefull specially dealling with exceptional cases (beware with assumptions, use it wisely). There is two types of adapters, object adapter (used at project) and class adapter, the class adapter require multiple inherintance so it wasn't possible doing it with java.
+
+## 8 Home Theater (Facade Pattern)
+
+```html
+The Facade Pattern provides an unified interface to a set 
+of interfaces in a subsystem. Face defines a higher-level 
+interface that makes the sybsystem easier to use.
+```
+This one is useful simplifying a large interface / set of interfaces into one that will perform actions based on the needs by delegation. In this example, we saw the complexity to prepare all our objects in our Home Theater project (DVD, Audio, TV, Lights..) so it would take a lot of work to do it over and over everytime that we would watch a movie. We are in a scenery where the facade fits like a glove, because it will just expose for us in an simplified high-level interface with less complexity and decouple the subsystems responsibilities on the client.
