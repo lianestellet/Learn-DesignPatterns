@@ -86,3 +86,12 @@ of interfaces in a subsystem. Face defines a higher-level
 interface that makes the sybsystem easier to use.
 ```
 This one is useful simplifying a large interface / set of interfaces into one that will perform actions based on the needs by delegation. In this example, we saw the complexity to prepare all our objects in our Home Theater project (DVD, Audio, TV, Lights..) so it would take a lot of work to do it over and over everytime that we would watch a movie. We are in a scenery where the facade fits like a glove, because it will just expose for us in an simplified high-level interface with less complexity and decouple the subsystems responsibilities on the client.
+
+## 9 Template Method (Template Pattern)
+
+```html
+Template Method - Define the skeleton of an algorithm in an operation,
+deferring some steps to subclasses. Template Method lets subclasses redefine
+certain steps of an algorithm without changing the algorithm’s structure.
+```
+This is a nice template when we think about reuse, there is an example showing the steps of preparing different beverages (coffee and tea), so this method wraps the common steps into one superclass that gets all the common behaviours, and abstract the ones leaving the subclass to make it own implementation (tea adding lemon, coffee adding milk for eg.). Although it's really good but not that flexible because this favors inheritance over composition, but it is still a great pattern to use if you have full knowledge of what will be needed linking and abstracting. We learned a lot from hooks too, that using our Template Method we could provide hooks to provide ways of changing the superclass behaviour our changing the outcome, the native Array Sort of Java uses Merge Sort, and Merge Sort uses a hook of CompareTo that shows the Merge Sort how the objects should be compared, so we could implement our own way of comparing objects implementing the Comparable interface and changing the method compareTo. These are very nice tools designing for OO, but they need more than study to be mastered, you need to have a keen eye to identify when to use and how to abstract and give hooks.
