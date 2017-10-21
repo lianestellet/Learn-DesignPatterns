@@ -2,7 +2,7 @@ package RestaurantMenu;
 
 import java.util.*;
   
-public class CompositeIterator implements Iterator<MenuComponent> {
+public class 	CompositeIterator implements Iterator<MenuComponent> {
 	Stack<Iterator<MenuComponent>> stack = new Stack<Iterator<MenuComponent>>();
    
 	public CompositeIterator(Iterator<MenuComponent> iterator) {
