@@ -115,3 +115,20 @@ and compositions of objects uniformly;
 ```
 
 On the same project, there was another situation where they wanted to aggregate a dessert menu inside our current lunch menu but at first it wasn't possible, because a Menu just accepted a menu item and not another menu. To overcome this, this pattern suggest us to created a common interface for both Menu and MenuItem so you can create Menus inside other Menus and iterate over them like a tree, so we have to put extra implementation for Menu and MenuItems so they could be seen as similarly. We had violated one of the OO principles in this project (single responsability) in exchange for tranparency, but keep in mind that there is a safety tradeoff and also that is good to balance safety with transparency accordingly with the project needs.
+
+## 12. GumballMachine (State Pattern)
+
+```html
+State - Allow an object to alter it's behavior when it's
+internall state changes. The object will appear to change
+it's class
+```
+This patterns is very similar with the strategy pattern because both focus on using composition to change objects behaviours, the core difference between then is the intent, where at the strategy the client specify the strategy object that context will compose (recalling our ducks project, our Duck classes have it owns behaviours that are passed by instantiation, like MallardDuck with it's quack sound), while on the state pattern we have objects that have different behaviors based on it's internal state. 
+At Gumball Machine project we identified that we have four possible states:
+
+- No coin (needs to insert coin to continue)
+- With coin (needs to turn the crank)
+- Sold (dispense the gumball)
+- Out of gumballs (there is no gumball insite the machine)
+
+Creating a common interface for each state and using the power of state patterns we composed it and used delegation for state changes.
