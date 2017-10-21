@@ -95,3 +95,23 @@ deferring some steps to subclasses. Template Method lets subclasses redefine
 certain steps of an algorithm without changing the algorithm’s structure.
 ```
 This is a nice template when we think about reuse, there is an example showing the steps of preparing different beverages (coffee and tea), so this method wraps the common steps into one superclass that gets all the common behaviours, and abstract the ones leaving the subclass to make it own implementation (tea adding lemon, coffee adding milk for eg.). Although it's really good but not that flexible because this favors inheritance over composition, but it is still a great pattern to use if you have full knowledge of what will be needed linking and abstracting. We learned a lot from hooks too, that using our Template Method we could provide hooks to provide ways of changing the superclass behaviour our changing the outcome, the native Array Sort of Java uses Merge Sort, and Merge Sort uses a hook of CompareTo that shows the Merge Sort how the objects should be compared, so we could implement our own way of comparing objects implementing the Comparable interface and changing the method compareTo. These are very nice tools designing for OO, but they need more than study to be mastered, you need to have a keen eye to identify when to use and how to abstract and give hooks.
+
+## 10 RestaurantMenu (Iterator Pattern)
+
+```html
+The Iterator Pattern provides a way to access the elements 
+of an aggregate object sequentially without exposing its 
+underlying representation.
+```
+
+In this project, two restaurants (Breakfast, Lunch) had their own implementation of their menus but they reunited and decided to join forces and become one. But there was a little problem.. even though the menu class have same property one of them was implemented as Array and other as Arraylist. To solve this problem avoiding rewriting alot of code, it was decided to use the Iterator pattern, because we can create a common interface for both menus wrapping the iteration into it.
+
+## 11 RestaurantMenu (Composite Pattern)
+
+```html
+Compose objects into tree structures to represent partwhole
+hierarchies. Composite lets clients treat individual objects 
+and compositions of objects uniformly;
+```
+
+On the same project, there was another situation where they wanted to aggregate a dessert menu inside our current lunch menu but at first it wasn't possible, because a Menu just accepted a menu item and not another menu. To overcome this, this pattern suggest us to created a common interface for both Menu and MenuItem so you can create Menus inside other Menus and iterate over them like a tree, so we have to put extra implementation for Menu and MenuItems so they could be seen as similarly. We had violated one of the OO principles in this project (single responsability) in exchange for tranparency, but keep in mind that there is a safety tradeoff and also that is good to balance safety with transparency accordingly with the project needs.
