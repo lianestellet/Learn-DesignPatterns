@@ -67,7 +67,7 @@ and support undoable operations.
 
 The Remote Control project asks us to create an automation for household devices, so we could control lights, fans, hottubs and other things of our house with a remote control. This pattern fits very well in this situation, because we know that the user press a button that executes a command, and so we could create a common interface that all commands should implement to decouple the receiver from the invoker separating the logic from the object that is receiving an action. It's a good pattern for requests too, because we can save a set of requests that we could redo them in case of error in one of the steps.
 
-## 7 DuckAdapter (Adapter Pattern)
+## 7. DuckAdapter (Adapter Pattern)
 
 ```html
 The Adapter Pattern converts the interface of a class
@@ -78,7 +78,7 @@ incompatible interfaces.
 
 It is a pretty simple one, it just changes your interface to what the client expects. In this case our client expects ducks but we have just turkeys, so it was created an adapter that receives an turkey and implements the duck interface, so the client see the adapter as a Duck and it will accept it. It's quite usefull specially dealling with exceptional cases (beware with assumptions, use it wisely). There is two types of adapters, object adapter (used at project) and class adapter, the class adapter require multiple inherintance so it wasn't possible doing it with java.
 
-## 8 Home Theater (Facade Pattern)
+## 8. Home Theater (Facade Pattern)
 
 ```html
 The Facade Pattern provides an unified interface to a set 
@@ -87,7 +87,7 @@ interface that makes the sybsystem easier to use.
 ```
 This one is useful simplifying a large interface / set of interfaces into one that will perform actions based on the needs by delegation. In this example, we saw the complexity to prepare all our objects in our Home Theater project (DVD, Audio, TV, Lights..) so it would take a lot of work to do it over and over everytime that we would watch a movie. We are in a scenery where the facade fits like a glove, because it will just expose for us in an simplified high-level interface with less complexity and decouple the subsystems responsibilities on the client.
 
-## 9 Template Method (Template Pattern)
+## 9. Template Method (Template Pattern)
 
 ```html
 Template Method - Define the skeleton of an algorithm in an operation,
@@ -96,7 +96,7 @@ certain steps of an algorithm without changing the algorithm’s structure.
 ```
 This is a nice template when we think about reuse, there is an example showing the steps of preparing different beverages (coffee and tea), so this method wraps the common steps into one superclass that gets all the common behaviours, and abstract the ones leaving the subclass to make it own implementation (tea adding lemon, coffee adding milk for eg.). Although it's really good but not that flexible because this favors inheritance over composition, but it is still a great pattern to use if you have full knowledge of what will be needed linking and abstracting. We learned a lot from hooks too, that using our Template Method we could provide hooks to provide ways of changing the superclass behaviour our changing the outcome, the native Array Sort of Java uses Merge Sort, and Merge Sort uses a hook of CompareTo that shows the Merge Sort how the objects should be compared, so we could implement our own way of comparing objects implementing the Comparable interface and changing the method compareTo. These are very nice tools designing for OO, but they need more than study to be mastered, you need to have a keen eye to identify when to use and how to abstract and give hooks.
 
-## 10 RestaurantMenu (Iterator Pattern)
+## 10. RestaurantMenu (Iterator Pattern)
 
 ```html
 The Iterator Pattern provides a way to access the elements 
@@ -106,7 +106,7 @@ underlying representation.
 
 In this project, two restaurants (Breakfast, Lunch) had their own implementation of their menus but they reunited and decided to join forces and become one. But there was a little problem.. even though the menu class have same property one of them was implemented as Array and other as Arraylist. To solve this problem avoiding rewriting alot of code, it was decided to use the Iterator pattern, because we can create a common interface for both menus wrapping the iteration into it.
 
-## 11 RestaurantMenu (Composite Pattern)
+## 11. RestaurantMenu (Composite Pattern)
 
 ```html
 Compose objects into tree structures to represent partwhole
